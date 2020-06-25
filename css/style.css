@@ -1,0 +1,220 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  font-size: 20px;
+  padding-top: 10%;
+}
+
+.wrapper button {
+  background-color: rgb(216, 222, 253);
+  border: 1px solid rgb(0, 0, 0);
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  border-radius: 8px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.wrapper input {
+  text-align: right;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  padding: 10px 14px 0px 10px;
+  border: 1px solid rgb(0, 0, 0);
+  font-size: 40px;
+  color: rgb(0, 0, 0);
+}
+
+.wrapper .calculator {
+  position: relative;
+  max-width: 580px;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 10px;
+  margin: 0 auto;
+  margin-top: 6%;
+  width: 50%;
+  font-size: 14px;
+  border-radius: 5px;
+  grid-template-areas:
+    "a a a a a a a"
+    "a a a a a a a"
+    "v w u t s r r"
+    "x x h i j p p"
+    "y y e f g o o"
+    "z z b c d n n"
+    "xz xz k l q m m";
+}
+
+.wrapper .calculator .display {
+  grid-area: a;
+}
+
+.wrapper .calculator .one {
+  grid-area: b;
+}
+
+.wrapper .calculator .two {
+  grid-area: c;
+}
+
+.wrapper .calculator .three {
+  grid-area: d;
+}
+
+.wrapper .calculator .four {
+  grid-area: e;
+}
+
+.wrapper .calculator .five {
+  grid-area: f;
+}
+
+.wrapper .calculator .six {
+  grid-area: g;
+}
+
+.wrapper .calculator .seven {
+  grid-area: h;
+}
+
+.wrapper .calculator .eight {
+  grid-area: i;
+}
+
+.wrapper .calculator .nine {
+  grid-area: j;
+}
+
+.wrapper .calculator .zero {
+  grid-area: l;
+}
+
+.wrapper .calculator .point {
+  grid-area: k;
+}
+
+.wrapper .calculator .addition {
+  grid-area: m;
+}
+
+.wrapper .calculator .subtraction {
+  grid-area: n;
+}
+
+.wrapper .calculator .multiplication {
+  grid-area: o;
+}
+
+.wrapper .calculator .division {
+  grid-area: p;
+}
+
+.wrapper .calculator .equally {
+  background-color: rgb(14, 0, 211);
+  color: #ffffff;
+  grid-area: q;
+}
+
+.wrapper .calculator .cancel {
+  background-color: rgb(14, 0, 211);
+  color: #ffffff;
+  grid-area: r;
+}
+
+.wrapper .calculator .perc {
+  grid-area: s;
+}
+
+.wrapper .calculator .factorial {
+  grid-area: t;
+}
+
+.wrapper .calculator .extent {
+  grid-area: u;
+}
+
+.wrapper .calculator .degree {
+  grid-area: v;
+}
+
+.wrapper .calculator .radian {
+  grid-area: w;
+}
+
+.wrapper .calculator .sin {
+  grid-area: x;
+}
+
+.wrapper .calculator .cos {
+  grid-area: y;
+}
+
+.wrapper .calculator .tg {
+  grid-area: z;
+}
+
+.wrapper .calculator .ctg {
+  grid-area: xz;
+}
+
+.wrapper .history {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  font-size: 30px;
+  background: none;
+  border: none;
+}
+
+.wrapper .hide {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.wrapper .hide:hover {
+  opacity: 0;
+}
+
+.wrapper .modal-wrapper {
+  position: fixed;
+  box-shadow: none;
+  top: 0;
+  left: -120%;
+  height: 100%;
+  opacity: 0;
+}
+
+.wrapper .modal-wrapper button {
+  width: 60px;
+  height: 60px;
+  background: none;
+  font-size: 30px;
+  border: none;
+}
+
+.wrapper .modal-wrapper p {
+  display: block;
+  background-color: rgb(216, 222, 253);
+  border: 1px solid rgb(0, 0, 0);
+  margin: 10px;
+  border-radius: 5px;
+  padding: 10px 10px;
+}
+
+.wrapper .modal-wrapper.open {
+  opacity: 1;
+  left: 0;
+  visibility: visible;
+  font-size: 25px;
+}
